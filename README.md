@@ -6,4 +6,6 @@
 
 # 💽 How to Install
 
-
+```bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Jay-WKJun/mac-script/main/index.sh)" && chmod +x index.sh && ./index.sh
+``````
