@@ -5,6 +5,10 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/marko/ .zprofile && eval "#(/opt/homebrew/bin/brew shellenv)"
 echo -e "${BGreen}----${BBGreen}"bash"${BGreen} install complete----"
 
+# brew command 설치
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/jun/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # git
 
 brew install git
