@@ -22,21 +22,21 @@ brew install --cask iterm2
 # antigen - zsh plugin manager like oh-my-zsh
 # https://antigen.sharats.me/
 brew install antigen
-source $HOMEBREW_PREFIX/share/antigen/antigen.zsh
+echo "# Antigen alias" >> ~/.zshrc
+echo "source $HOMEBREW_PREFIX/share/antigen/antigen.zsh" >> ~/.zshrc
 
-echo "# Spaceship theme" >> ~/.zshrc
-echo "antigen theme spaceship-prompt/spaceship-prompt" >> ~/.zshrc
+echo "# Spaceship theme"
+antigen theme spaceship-prompt/spaceship-prompt
 
-echo "# Syntax highlighting bundle." >> ~/.zshrc
-echo "antigen bundle zsh-users/zsh-syntax-highlighting" >> ~/.zshrc
+echo "# Syntax highlighting bundle."
+antigen bundle zsh-users/zsh-syntax-highlighting
 
-echo "# Auto suggestion bundle" >> ~/.zshrc
-echo "antigen bundle zsh-users/zsh-autosuggestions" >> ~/.zshrc
+echo "# Auto suggestion bundle"
+antigen bundle zsh-users/zsh-autosuggestions
 
-echo "# Tell Antigen that you're done." >> ~/.zshrc
-echo "antigen apply" >> ~/.zshrc
+echo "# Tell Antigen that you're done."
+antigen apply
 
-antigen bundle
 echo -e "${BGreen}----${BBGreen}"zsh terminal"${BGreen} install complete----"
 
 # Fig
