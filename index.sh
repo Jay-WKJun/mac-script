@@ -12,6 +12,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # git
 
 brew install git
+brew install gh
 echo -e "${BGreen}----${BBGreen}"git"${BGreen} install complete----"
 
 # zsh, antigen + spaceship theme + useful plugins
@@ -25,17 +26,24 @@ brew install antigen
 echo "# Antigen alias" >> ~/.zshrc
 echo "source $HOMEBREW_PREFIX/share/antigen/antigen.zsh" >> ~/.zshrc
 
+echo "# oh-my-zsh"
+antigen use oh-my-zsh
+
 echo "# Spaceship theme"
 antigen theme spaceship-prompt/spaceship-prompt
+echo "antigen theme spaceship-prompt/spaceship-prompt" >> ~/.zshrc
 
 echo "# Syntax highlighting bundle."
 antigen bundle zsh-users/zsh-syntax-highlighting
+echo "antigen bundle zsh-users/zsh-syntax-highlighting" >> ~/.zshrc
 
 echo "# Auto suggestion bundle"
 antigen bundle zsh-users/zsh-autosuggestions
+echo "antigen bundle zsh-users/zsh-autosuggestions" >> ~/.zshrc
 
 echo "# Tell Antigen that you're done."
 antigen apply
+echo "antigen apply" >> ~/.zshrc
 
 echo -e "${BGreen}----${BBGreen}"zsh terminal"${BGreen} install complete----"
 
@@ -90,6 +98,6 @@ brew install --cask obsidian
 echo echo -e "${BBGreen}----Toggl track은 직접----"
 echo echo -e "${BBGreen}https://support.toggl.com/en/articles/6151856-toggl-track-desktop-app-for-macos"
 echo ''
-echo echo -e "${BBGreen}----카톡은 App store에서 직접----"
+echo echo -e "${BBGreen}----카톡, 라인은 App store에서 직접----"
 echo ''
 echo echo -e "${BBGreen}----All Done!!!----"
