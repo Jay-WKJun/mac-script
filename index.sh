@@ -7,7 +7,7 @@ echo -e "${BGreen}----${BBGreen}"bash"${BGreen} install complete----"
 
 # brew command 설치
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/jun/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval $(/opt/homebrew/bin/brew shellenv)
 
 # git
 
