@@ -33,6 +33,10 @@ echo "# Spaceship theme"
 antigen theme spaceship-prompt/spaceship-prompt
 echo "antigen theme spaceship-prompt/spaceship-prompt" >> ~/.zshrc
 
+echo "# git shortcut bundle."
+antigen bundle git
+echo "antigen bundle git" >> ~/.zshrc
+
 echo "# Syntax highlighting bundle."
 antigen bundle zsh-users/zsh-syntax-highlighting
 echo "antigen bundle zsh-users/zsh-syntax-highlighting" >> ~/.zshrc
